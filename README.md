@@ -1,2 +1,2 @@
 # The-Link
-Student Doubt Solving System
+Student Doubt Solving and resource availaing system
