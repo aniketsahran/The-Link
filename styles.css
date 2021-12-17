@@ -378,7 +378,7 @@ span
     border-left: 3px solid;
     height: 360px;
     position: absolute;
-    left: 340px;
+    left: 360px;
     top: 430px;
 }
 
@@ -388,4 +388,28 @@ span
     {
         display: none;
     }
+}
+
+
+/* notification page */
+.dt{
+    padding: 5% 20%;
+    justify-content: left;
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(104, 69, 28, 0.74);
+}
+/* admin resources page */
+.header1{
+    background-color: rgb(231, 226, 226) ;
+    justify-content: center;
+    text-align: left;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    padding: 8%;
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(104, 69, 28, 0.74);
+
+
 }
