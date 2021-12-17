@@ -1,6 +1,6 @@
 $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	if (scroll > 560) {
+	if (scroll > 120) {
 	    $(".navbar").css("background" , "#000");
 	}
     else{
