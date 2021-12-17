@@ -16,6 +16,15 @@ body
     align-items: center;
     justify-content: center;
 }
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .logo
 {
     width: 40%;
@@ -227,109 +236,15 @@ span
     font-family: 'Playfair Display', serif;
     text-align: center;
     padding-top: 10px;
-    padding-right: 150px;
-    padding-left: 150px;
-}
-.about_us{
-    background-color: rgb(231, 226, 226);
-    font-family: 'Playfair Display', serif;
-    text-align: left;
-    padding: 2% 10% 40px ;
-}
-.about{
-    font-family: 'Bebas Neue', cursive;
-    color: rgba(104, 69, 28, 0.74);
-}
-.team{
-    font-family: 'Bebas Neue', cursive;
-    color: rgba(104, 69, 28, 0.74);
-    text-align: left;
-}
-/* Flip Card  */
-.row{
-    background-color: rgb(231, 226, 226);
-}
-.flip-card {
-    margin: 10% 0 20%;
-    background-color: transparent;
-    width: 100%;
-    height: 280px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-   
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    padding: 20%;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: center;
-    
-}
-.surabhi{
-    background-image: url("images/surabhi_1.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-.Aniket{
-    background-image: url("images/Aniket.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-.arpit{
-    background-image: url("images/arpit.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.divija{
-    background-image: url("images/divija.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-/* Style the back side */
-.flip-card-back {
-    background-color:  rgba(0, 0, 0, 0.74);
-    text-align: center;
-    font-size:1.5rem;
-    color: #fff;
-    padding: 30%;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: center;
-    transform: rotateY(180deg);
-}
-
-.matcard
+.about
 {
-    align-items: center;
-    justify-content: center;
+    transform: rotate(90 deg);
+    font-family: 'Bebas Neue', cursive;
+    
 }
 
 /* Resource Page  */
@@ -352,4 +267,94 @@ span
 {
     margin: 9% 0 6%;
     width: 100%;
+}
+
+/* Flip Card  */
+
+.flip-card {
+    margin: 10% 0 20%;
+    background-color: transparent;
+    width: 100%;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.4)), url("images/BackgroundNoiseStudy.jpg");
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.4)), url("images/BackgroundNoiseStudy.jpg");
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.matcard
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top
+{
+    height: 30%;
+}
+
+.filter-form
+{
+    text-align: left;
+}
+
+.filter-form h5
+{
+    padding-top: 3%;
+}
+
+.vl 
+{
+    border-left: 3px solid;
+    height: 360px;
+    position: absolute;
+    left: 340px;
+    top: 430px;
+}
+
+@media(max-width: 1100px)
+{
+    .filter-form, .vl
+    {
+        display: none;
+    }
 }
