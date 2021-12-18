@@ -1,0 +1,459 @@
+body
+{
+    margin: 0;
+}
+
+.login-bg
+{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;    
+    background: url("images/case+study+background+jenzabar+final.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.logo
+{
+    width: 40%;
+    margin-right: 10%;
+
+}
+
+.card
+{
+
+    width: 350px;
+    height: 600px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+    perspective: 1000px;
+}
+
+.inner-box
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-front, .card-back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04),rgba(255,255,255,0.04));
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card-back
+{
+    transform: rotateY(180deg);
+}
+
+.card h2
+{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box
+{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+
+::placeholder
+{
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.submit-btn
+{
+    width: 100%;
+    background: #000;;
+    border: 1px solid #fff;
+    margin: 35px 0 0;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-register
+{
+    width: 100%;
+    background: #000;;
+    border: 1px solid #fff;
+    margin: 0 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-login
+{
+    width: 100%;
+    background: #000;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+span
+{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.card .btn
+{
+    margin-top: 70px;
+}
+
+.card a
+{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+
+}
+
+.logged
+{
+    margin-top: 10px;
+}
+
+@media(max-width: 1140px)
+{
+    .logo
+    {
+        display: none;
+    }
+}
+
+/* Homepage */
+
+.nav-logo
+{
+    height: 40px;
+}
+
+.homepage-bg
+{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.4)), url("images/BackgroundNoiseStudy.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-edit
+{
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.5);
+}
+
+.navbar-nav
+{
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    text-decoration-color: #fff;
+}
+
+.nav-link
+{
+    padding-left: 4%;
+}
+
+.tagline
+{
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 4rem;
+}
+.about_us{
+    background-color: rgb(231, 226, 226);
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    padding: 2% 10% 40px ;
+}
+.about{
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(104, 69, 28, 0.74);
+}
+.light-div
+{
+    background-color: rgb(231, 226, 226);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+.team{
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(104, 69, 28, 0.74);
+    text-align: left;
+}
+/* Flip Card  */
+.row{
+    background-color: rgb(231, 226, 226);
+}
+.flip-card {
+    margin: 10% 0 20%;
+    background-color: transparent;
+    width: 100%;
+    height: 280px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+   
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20%;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    
+}
+.surabhi{
+    background-image: url("images/surabhi_1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.Aniket{
+    background-image: url("images/Aniket.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.arpit{
+    background-image: url("images/arpit.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.divija{
+    background-image: url("images/divija.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+/* Style the back side */
+.flip-card-back {
+    background-color:  rgba(0, 0, 0, 0.74);
+    text-align: center;
+    font-size:1.5rem;
+    color: #fff;
+    padding: 30%;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.matcard
+{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Resource Page  */
+
+.resource-bg
+{
+    width: 100%;
+    height: 37vh;
+    font-family: sans-serif;    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.4)), url("images/BackgroundNoiseStudy.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.um-btn
+{
+    margin: 9% 0 6%;
+    width: 100%;
+}
+.filter-form
+{
+    text-align: left;
+}
+
+.filter-form h5
+{
+    padding-top: 3%;
+}
+
+.vl 
+{
+    border-left: 3px solid;
+    height: 360px;
+    position: absolute;
+    left: 360px;
+    top: 430px;
+}
+
+@media(max-width: 1100px)
+{
+    .filter-form, .vl
+    {
+        display: none;
+    }
+}
+
+
+/* notification page */
+.dt{
+    padding: 5% 20%;
+    justify-content: left;
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(104, 69, 28, 0.74);
+}
+/* admin resources page */
+.header1{
+    background-color: rgb(231, 226, 226) ;
+    justify-content: center;
+    text-align: left;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    padding: 8%;
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(104, 69, 28, 0.74);
+
+
+}
+
+/* Upload Materials */
+
+.center-form-div
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 20% 10%;
+}
+
+.input-group-text
+{
+    background-color: #000;
+    color: #fff;
+    width: 7.6rem;
+}
+
+.margin-daalo
+{
+    margin-left: 10px;
+}
+
+@media(max-width: 900px)
+{
+    .center-form-div
+    {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5% 5% 5%;
+    }
+}
+
+.textbox-input
+{
+    padding-bottom: 20px;
+    height: 50%;
+}
+
+.sbt-btn
+{
+    margin-bottom: 0;
+}
