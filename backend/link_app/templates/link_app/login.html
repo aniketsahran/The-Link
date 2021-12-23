@@ -1,0 +1,52 @@
+{% load static %}
+<html>
+    <head>
+        <title>The Link</title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        <link href="{% static 'img/favicon.ico' %}" rel="icon">
+    </head>
+    <body>
+        <div class="login-bg">
+            <img src="{% static 'img/Logowhite.png' %}" class="logo">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <br>
+                        <br>
+                        <br>
+                        <h2>Login</h2>
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="email" pattern="^[a-z0-9_]+@thapar\.edu$" class="input-box" placeholder="Your thapar Email" name="username" required>
+                            <input type="password" class="input-box" placeholder="Password" name="pass" required>                        
+                            <div class="logged"><input type="checkbox"><span>Remember Me</span></div>
+                            <button type="submit" class="submit-btn" name="login">Submit</button>
+                        </form>
+                        <button type="button" class="btn btn-login">I'm New Here</button>
+                        <a href="">Forgot Password</a>
+                    </div>
+                    <div class="card-back">
+                        <h2>Register</h2>
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="text" class="input-box" placeholder="Your Name" name="name" required>
+                            <input type="text" class="input-box" placeholder="Your Roll Number" name="roll" required>
+                            <input type="email" pattern="^[a-z0-9_]+@thapar\.edu$" class="input-box" placeholder="Your thapar Email" name="username" required>
+                            <input type="password" class="input-box" placeholder="Password" name="pass1" required>
+                            <input type="password" class="input-box" placeholder="Confirm Password" name="pass2" required>
+                            <button type="submit" class="submit-btn" name="register">Submit</button>
+                        </form>
+                        <button type="button" class="btn btn-register">I have an account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'js/login.js' %}" charset="utf-8"></script>
+    {% if message %}
+    <script>
+        alert("{{ message }}");
+    </script>
+    {% endif %}
+</html>
