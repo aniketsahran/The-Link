@@ -153,7 +153,6 @@ def notification(request):
 
 
 @login_required
-@permission_required("models.CustomUser.is_teacher")
 def notification_add(request):
     if request.method == 'POST':
         print(request.POST)
