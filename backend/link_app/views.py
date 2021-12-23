@@ -50,7 +50,6 @@ def home(request):
 
 
 @login_required
-@permission_required("models.CustomUser.is_teacher")
 def add_resource(request):
     if request.method == 'POST':
         print(request.POST)
